@@ -1,0 +1,5 @@
+Cargo.lock
+
+# Don't push already compiled binaries
+target
+

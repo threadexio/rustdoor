@@ -1,0 +1,7 @@
+[package]
+name = "rustdoor"
+version = "0.1.0"
+authors = ["threadexio"]
+edition = "2018"
+
+[dependencies]
