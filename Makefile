@@ -1,7 +1,7 @@
 ARGS = -j8
 
 TARGETS =	x86_64-unknown-linux-musl \
-			i686-unknown-linux-musl \
+			x86_64-unknown-linux-gnu \
 			x86_64-pc-windows-gnu \
 
 BUILD_CMD = cargo build $(ARGS) --target
@@ -10,7 +10,7 @@ BUILD_CMD = cargo build $(ARGS) --target
 .PHONY: release
 release: clean
 	for t in $(TARGETS); do \
-		$(BUILD_CMD) $$t --$@; \
+		$(BUILD_CMD) $$t --release; \
 	done
 
 # Debug build

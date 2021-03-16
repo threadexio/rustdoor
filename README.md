@@ -24,13 +24,18 @@ https://www.rust-lang.org/tools/install
 git clone https://github.com/threadexio/rustdoor.git && cd rustdoor
 ```
 
+Also, install all the target platforms from the `Makefile` with:
+```bash
+make install
+```
+
 2. Compile the source
 ```bash
 make release
 ```
 or
 ```bash
-make debug)
+make debug
 ```
 After that you should be able to find the binaries in the `target` directory
 

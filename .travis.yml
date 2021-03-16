@@ -1,0 +1,11 @@
+language: rust
+os:
+  - linux
+  - windows
+
+before_install:
+  - make install
+
+script:
+  - make debug
+  - make release
