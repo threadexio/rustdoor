@@ -13,6 +13,10 @@ This is a fun project I am working on in order to learn rust. To put it simply, 
 - Windows
 - Linux
 
+-----------
+[![Build Status](https://travis-ci.com/threadexio/rustdoor.svg?branch=master)](https://travis-ci.com/threadexio/rustdoor)
+-----------
+
 ## How to use
 0. Make sure you have rust installed, check the link for instructions on how to install
 ```bash
