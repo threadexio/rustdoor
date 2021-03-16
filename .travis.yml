@@ -4,7 +4,8 @@ os:
   - windows
 
 before_install:
-  - make install
+  - if [ "$TRAVIS_OS_NAME" = "linux" ]; then make install; fi
+  - if [ "$TRAVIS_OS_NAME" = "windows" ]; then choco install make; make install; fi
 
 script:
   - make debug
